@@ -1,0 +1,89 @@
+
+let anioNacimiento = parseInt(prompt("En que anio naciste?"));
+const anioActual = 2022;
+
+edad = anioActual - anioNacimiento;
+
+alert(edad);
+
+
+ 
+let nombre = prompt("ingrese tu nombre");
+
+console.log(nombre); 
+
+ console.log("Hola, bienvenido al curso de Js");
+console.log(nombre);
+alert("Hola " + nombre + ", bienvenido al curso de Js");  
+
+ = asignacion
+
+ let edad = 18; 
+
+ para comparar - == - operador logico
+
+ let mayorEdad = (edad == 18) //false 
+
+ //if
+if (mayorEdad ) {
+    alert("sos mayor de edad")
+}
+ 
+
+ let deporteFavorito = prompt("Cual es tu deporte favorito");
+
+if (deporteFavorito == "voley") {
+alert("el mio tambien");
+}
+else if (deporteFavorito == "Rugby") {
+alert ("ese deporte no me gusta")
+}
+else {
+alert('Ah a mi no me gusta')
+}
+
+let nota = parseInt(prompt("cual fue tu nota en matematica"));
+
+if (nota <= 4) {
+    alert("desaprobaste");
+} else if (nota < 7) {
+    alert("tenes que mejorar tu nota un poco")
+} else  {
+    alert("te felicito") }
+
+
+let precioNuevo;
+
+let precio = parseInt(prompt("cual es el precio"));
+if (precio > 1000) {
+    precioNuevo = precio / 2;
+} else {
+    precioNuevo = precio * 0.75;
+}
+console.log(`el precio nuevo es ${precioNuevo}`);
+
+
+ 
+
+
+     else {
+    alert("Tu deporte favorito es " + deporteFavorito + ". El mio es el voley")
+    //string template 
+    alert(`Tu deporte favorito es ${deporteFavorito}. El mio es el voley`)
+    } 
+
+
+ if (40>30){
+    console.log("no vas a ver este mensaje");
+} 
+
+let edad = parseInt(prompt("cual es tu edad"));
+if (edad <= 17) {
+    alert("eres un/a nina");
+}
+else if (edad <= 40) {
+    alert("Sos joven");
+}
+else {
+    alert("trajiste tu baston... jaja");
+}
