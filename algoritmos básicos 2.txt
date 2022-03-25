@@ -1,0 +1,153 @@
+// FOR:
+
+ let ingresarNumero = parseInt(prompt("Ingrese un numero"));
+
+for (let i = 1; i <= 10; i++) {
+  console.log(ingresarNumero + " x " + i + " = " + (ingresarNumero * i));
+} 
+
+for (let i = 1; i < 20; i++) {
+    let ingresarNombre = prompt ("Ingresar nombre");
+
+    alert ("turno N~ "+i+" Nombre: "+ingresarNombre);
+} 
+
+// bucle for
+
+let repeticion = parseInt(prompt("Cuantas veces quieres repetir el bucle?"));
+
+for (let i = 0; i <= repeticion; i++) {
+   if (i % 2 == 0) {
+  console.log(i);
+  } 
+  if(
+    i == 5) {
+      continue;
+    }
+  console.log(i);
+}
+
+
+// WHILE
+// validacion de contrasena
+
+let pass = 1234;
+let dato = parseInt(prompt("cual es la contrasena"));
+
+while (dato != pass) {
+  alert("la contrasena es erronea");
+  dato = parseInt(prompt("cual es la contrasena"));
+}
+
+// DO WHILE
+// validacion de contrasena
+
+let pass = 1234;
+let dato = parseInt(prompt("cual es la contrasena"));
+let intentos = 3
+while ((dato != pass) && (intentos > 0)) {
+  intentos--;
+  alert(`la contrasena es erronea, te quedan ${intentos}`);
+  dato = parseInt(prompt("cual es la contrasena"));
+  
+}
+
+
+// DO WHILE con un IF
+// validacion de contrasena
+
+let pass = 1234;
+let dato = parseInt(prompt("cual es la contrasena"));
+let intentos = 3
+
+while (dato != pass) {
+  if (intentos > 0) {
+    intentos--;
+    alert(`la contrasena es erronea, te quedan ${intentos}`);
+    dato = parseInt(prompt("cual es la contrasena"));
+  }
+  else {
+    alert("se acabaron los intentos");
+    break;
+  }
+}
+
+
+// DO WHILE 
+// validacion de contrasena
+
+let numero = 0;
+
+do {
+  numero = prompt("ingresar numero");
+  console.log(numero);
+} while(parseInt(numero, 10) > 0){
+  alert("debes ingresar un numero");
+};
+
+//SWITCH - es casi igual a if else else if
+
+let animal = prompt("que animal te gusta?");
+
+switch (animal) {
+  case "gato":
+    console.log("el gato hace miau");
+    break;
+  case "perro":
+    console.log("el perro hace guau");
+    break;
+  case "vaca":
+    console.log("la vaca hace mu");
+    break;
+  default:
+    console.log("no se como hace ese animal");
+    break;
+}
+
+// WHILE Y SWITCH - 
+let entrada = prompt("ingresar un nombre");
+//repetimos hasta que se ingrese "ESC"
+
+while (ENTRADA != "ESC") {
+  switch (entrada) {
+    case "ANA":
+      alert ("hola ANA");
+      break;
+    case "JUAN":
+      alert ("hola JUAN");
+      break;
+    default:
+      alert ("quien sos");
+      break;
+  }
+  entrada = prompt ("ingresar un nombre");
+}
+
+//CALCULADORA
+
+let num1 = parseInt(prompt('Ingrese el primer numero'));
+let num2 = parseInt(prompt('Ingrese el segundo numero'));
+let operacion = prompt ('Ingrese la operacion que desea realizar');
+let resultado = 0;
+
+switch (operacion) {
+  case '+': 
+    resultado = num1 + num2;
+    console.log(`el resultado de ${num1} ${operacion} ${num2} es ${resultado}`);
+    break;
+  case '-':
+    resultado = num1 - num2;
+    console.log(`el resultado de ${num1} ${operacion} ${num2} es ${resultado}`);
+    break;
+  case '*':
+    resultado = num1 * num2;
+    console.log(`el resultado de ${num1} ${operacion} ${num2} es ${resultado}`);
+    break;
+  case '/':
+    resultado = num1 / num2;
+    console.log(`el resultado de ${num1} ${operacion} ${num2} es ${resultado}`);
+    break;
+  default:
+    alert("esto no es una operacion matematica");
+    break;
+}
