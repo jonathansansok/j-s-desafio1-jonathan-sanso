@@ -1,28 +1,25 @@
-//CALCULADORA
 
-let num1 = parseInt(prompt('Ingrese el primer numero'));
-let num2 = parseInt(prompt('Ingrese el segundo numero'));
-let operacion = prompt ('Ingrese la operacion que desea realizar');
-let resultado = 0;
+// DO WHILE con un IF
+// Adivinanza de mi nombre
 
-switch (operacion) {
-  case '+': 
-    resultado = num1 + num2;
-    console.log(`el resultado de ${num1} ${operacion} ${num2} es ${resultado}`);
+let pass = "Jonathan";
+let dato = (prompt("Adivina mi nombre! la primera letra es J"));
+let intentos = 4;
+
+while (dato != pass) {
+  if (intentos > 0) {
+    intentos--;
+    alert(`Todavia no adivinaste, mi nombre termina con n, te quedan ${intentos}`);
+    dato = (prompt("Adivina mi nombre..."));
+    intentos--;
+    alert(`Todavia no adivinaste, la segunda letra es o, te quedan ${intentos}`);
+    dato = (prompt("Adivina mi nombre..."));
+    intentos--;
+    alert(`Todavia no adivinaste, hay una h intermedia, te quedan ${intentos}`);
+    dato = (prompt("Adivina mi nombre..."));
+  }
+  else {
+    alert("se acabaron los intentos");
     break;
-  case '-':
-    resultado = num1 - num2;
-    console.log(`el resultado de ${num1} ${operacion} ${num2} es ${resultado}`);
-    break;
-  case '*':
-    resultado = num1 * num2;
-    console.log(`el resultado de ${num1} ${operacion} ${num2} es ${resultado}`);
-    break;
-  case '/':
-    resultado = num1 / num2;
-    console.log(`el resultado de ${num1} ${operacion} ${num2} es ${resultado}`);
-    break;
-  default:
-    alert("esto no es una operacion matematica");
-    break;
+  }
 }
