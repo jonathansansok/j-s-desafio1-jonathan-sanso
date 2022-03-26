@@ -4,18 +4,18 @@
 
 let pass = "Jonathan";
 let dato = (prompt("Adivina mi nombre! la primera letra es J"));
-let intentos = 4;
+let intentos = 3;
 
 while (dato != pass) {
   if (intentos > 0) {
     intentos--;
-    alert(`Todavia no adivinaste, mi nombre termina con n, te quedan ${intentos}`);
+    alert(`Todavia no adivinaste, mi nombre termina con n, te quedan ${intentos} intentos`);
     dato = (prompt("Adivina mi nombre..."));
     intentos--;
-    alert(`Todavia no adivinaste, la segunda letra es o, te quedan ${intentos}`);
+    alert(`Todavia no adivinaste, la segunda letra es o, te quedan ${intentos} intentos`);
     dato = (prompt("Adivina mi nombre..."));
     intentos--;
-    alert(`Todavia no adivinaste, hay una h intermedia, te quedan ${intentos}`);
+    alert(`Todavia no adivinaste, te quedan ${intentos} intentos pero te regalo un intentos mas,  la segunda letra es o.`);
     dato = (prompt("Adivina mi nombre..."));
   }
   else {
